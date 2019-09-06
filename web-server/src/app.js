@@ -10,6 +10,14 @@ app.get("/help", (req, res) => {
   res.send("Help page");
 });
 
+app.get("/about", (req, res) => {
+  res.send("About page");
+});
+
+app.get("/weather", (req, res) => {
+  res.send("Weather page");
+});
+
 // app.com
 // app.com/help
 // app.com/about
