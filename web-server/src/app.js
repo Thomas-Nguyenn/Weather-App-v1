@@ -34,7 +34,8 @@ app.get("/about", (req, res) => {
 app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
-    info: "Here you can find all of the information"
+    info: "Here you can find all of the information",
+    name: "Thomas Nguyen"
   });
 });
 
@@ -43,6 +44,14 @@ app.get("/weather", (req, res) => {
     forecast: "Windy",
     location: "Atlanta"
   });
+});
+
+app.get("/help/*", (req, res) => {
+  res.send("Help article not found");
+});
+
+app.get("*", (req, res) => {
+  res.send("My 404 page");
 });
 
 app.listen(3000, () => {
