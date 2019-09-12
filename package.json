@@ -1,23 +1,16 @@
 {
-  "name": "weather-app",
+  "name": "web-server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dev-ThomasNguyen/Weather-App-v1.git"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Dev-ThomasNguyen/Weather-App-v1/issues"
-  },
-  "homepage": "https://github.com/Dev-ThomasNguyen/Weather-App-v1#readme",
   "dependencies": {
-    "request": "^2.88.0"
+    "express": "^4.17.1",
+    "hbs": "^4.0.4"
   }
 }
